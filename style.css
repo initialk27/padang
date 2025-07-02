@@ -1,0 +1,137 @@
+/* Tetap gunakan gaya HP meskipun di desktop */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 420px; /* Seperti layar handphone */
+  margin: auto;
+}
+
+.menu-item {
+  position: relative;
+  background-image: url('rumahmakan.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Overlay putih setengah transparan */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* putih 50% */
+  z-index: 1;
+}
+
+/* Supaya isi tetap terlihat di atas overlay */
+.menu-img,
+.menu-detail {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-item {
+    background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  /*Mobile-stylelayoutselalu*/padding: 15px;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-name {
+    display: flex;
+    justify-content: flex-end;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-price {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  color: #666;
+  font-size: 15px;
+}
+
+.item-controls {
+    display: flex;
+    justify-content: flex-end;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-controls button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.item-controls button:hover {
+  background-color: #e68a00;
+}
+
+.quantity {
+  min-width: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#bayarBtn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 28px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 420px;
+
+
+}

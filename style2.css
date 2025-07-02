@@ -1,0 +1,79 @@
+/* style.css - Halaman Konfirmasi */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header {
+  margin-top: 180px;
+}
+
+#orderSummary {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#orderSummary p {
+  font-size: 16px;
+  margin: 8px 0;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 4px;
+}
+
+#totalHarga {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
+
+#confirmBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #25D366; /* Warna khas WhatsApp */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#confirmBtn:hover {
+  background-color: #1da851;
+}
+
+a#waLink {
+  text-decoration: none;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  #orderSummary, #totalHarga {
+    padding: 15px;
+  }
+
+  #orderSummary p {
+    font-size: 15px;
+  }
+
+  #confirmBtn {
+    width: 100%;
+    font-size: 16px;
+  }
+}
